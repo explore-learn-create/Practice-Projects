@@ -2,7 +2,7 @@
 
 Thanks for checking out this samll Full Responsive Project.
 
-Here You can check it live.[ https://naughty-meitner-915666.netlify.app/built-with-us/ ]
+Here You can check it live.[ https://naughty-meitner-915666.netlify.app/built with us ]
 
 
 ## About Project!
