@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main--back: #6E7BFB;
+    --card-back: #CEDFFD;
+    --h1-color: #003386;
+    --p1-color: #4D5EE3;
+    --p2-color: #7686D5;
+    --icons-color: #D9E5FF;
+    --heading-font: 'Poppins', sans-serif;
+    --para-font: 'Lato', sans-serif;
+    --small-para-font: monospace;
+
+}
+
+body{
+    background-color: var(--main--back);
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.icons .fab{
+    color: var(--icons-color);
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 90vh;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--card-back);
+    height: 412px;
+    width: 960px;
+    z-index: -10;
+    position: relative;
+}
+
+.text{
+    width: 100%;
+    padding: 40px 10px;
+    z-index: 30;
+}
+
+.text h1{
+  color: var(--h1-color);
+  font-family: var(--heading-font);
+  font-size: 3.4rem;
+  line-height: 6rem;
+}
+.text p{
+    color: var(--p1-color);
+    font-family: var(--para-font);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.text span{
+  position: relative;
+  bottom: -4%;
+  color: var(--p2-color);
+  font-family: var(--para-font);
+  font-weight: 800;
+  padding-top: 3%;
+  font-size: 25px;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.hero-btn a{
+     background: rgb(92, 92, 187);
+     padding: 10px 20px; 
+     font-family: var(--small-para-font);
+     text-decoration: none;
+     color: white;
+     font-size: 18px;  
+     font-weight: 700;
+     letter-spacing: .6px;
+     cursor: pointer;
+}
+.hero-btn{
+    margin-top: 16%;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    z-index: -10;
+}
+
+.image .dek-img{
+    height: 250px;
+    width: 500px;
+    
+}
+
+.image .tab-img{
+    display: none;
+}
+.image .mob-img{
+    display: none;
+
+}
+
+footer{
+    text-align: center;
+    margin-top: -1%;
+}
+
+footer .fas{
+    color: rgb(240, 61, 29);
+}
+
+footer span{
+   padding-right: 5px;
+   color: var(--card-back);
+   font-weight: 900;
+   font-family: var(--para-font);
+}
+
+footer a{
+    padding-left: 4px;
+    color: var(--card-back);
+    font-weight: 900;
+    font-family: var(--para-font);
+    text-decoration: none;
+ }
+
+
+ @media screen and (min-width: 890px) and (max-width: 1024px){
+     
+    .card{
+    height: 412px;
+    width: 790px;
+}
+
+.image .dek-img{
+    height: 210px;
+    width: 400px;
+    
+}
+
+.text h1{
+    font-size: 3.1rem;
+    line-height: 6rem;
+  }
+  .text p{
+      font-size: 23px;
+  }
+  
+  .text span{
+    padding-top: 3%;
+    font-size: 23px;
+    line-height: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .icons .fab{
+    font-size: 27px;
+    padding: 0 10px;
+}
+
+ }
+
+ @media screen and (min-width: 760px) and (max-width: 889px){
+  
+    .card{
+        height: 400px;
+       width: 740px;
+    }
+
+
+    .image .dek-img{
+        height: 230px;
+       width: 400px;
+    }
+
+    .text h1{
+        font-size: 2.7rem;
+        line-height: 5rem;
+      }
+      .text p{
+          font-size: 20px;
+      }
+      
+      .text span{
+        padding-top: 3%;
+        font-size: 20px;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+      }
+    
+      .icons .fab{
+        font-size: 27px;
+        padding: 0 10px;
+    }
+
+    .icons .fab{
+        font-size: 25px;
+        padding: 0 10px;
+    }
+
+ }
+
+@media screen and (min-width: 551px) and (max-width: 760px){
+
+    .container{
+        overflow: hidden;
+    }
+    
+    .card{
+        display: grid;
+        justify-content: center;
+        height: 510px;
+        width: 540px;
+    }  
+
+    .image .dek-img{
+        display: none;
+    }
+
+    .image .mob-img{
+        display: block;
+        position: absolute;
+        top: 234px;
+        right: 65px;
+        width: 400px;
+    }
+
+    .text{
+        width: 100%;
+        text-align: center;
+        padding: 30px 10px;
+        z-index: 30;
+    }
+
+    .text h1{
+        font-size: 3.5rem;
+        line-height: 6rem;
+      }
+      .text p{
+          font-size: 25px;
+      }
+      
+      .text span{
+        padding-top: 3%;
+        font-size: 25px;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+      }
+    
+
+    .icons .fab{
+        font-size: 25px;
+        padding: 0 6px;
+    }
+
+    .icons{
+        justify-content: flex-start;
+        margin: 8px;
+    }
+     
+    .hero-btn{
+        margin-top: 14%;
+    }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 550px){
+    
+    .container{
+        overflow: hidden;
+    }
+    
+    .card{
+        display: grid;
+        justify-content: center;
+        height: 510px;
+        width: 400px;
+    }  
+
+    .image .dek-img{
+        display: none;
+    }
+
+    .image .mob-img{
+        display: block;
+        position: absolute;
+        top: 252px;
+        right: 10px;
+    }
+
+    .text{
+        width: 100%;
+        text-align: center;
+        padding: 30px 10px;
+        z-index: 30;
+    }
+
+    .text h1{
+        font-size: 2.9rem;
+        line-height: 5rem;
+      }
+      .text p{
+          font-size: 22px;
+      }
+      
+      .text span{
+        padding-top: 3%;
+        font-size: 22px;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+      }
+    
+      .icons .fab{
+        font-size: 27px;
+        padding: 0 10px;
+    }
+
+    .icons .fab{
+        font-size: 22px;
+        padding: 0 4px;
+    }
+
+    .icons{
+        justify-content: flex-start;
+        margin: 10px;
+    }
+}
+
+
+@media screen and (min-width: 310px) and (max-width: 425px){
+    
+    .container{
+        overflow: hidden;
+    }
+    
+    .card{
+        display: grid;
+        justify-content: center;
+        height: 510px;
+        width: 350px;
+    }  
+
+    .image .dek-img{
+        display: none;
+    }
+
+    .image .mob-img{
+        display: block;
+        width: 350px;
+        position: absolute;
+        top: 252px;
+        right: 1px;
+    }
+
+    .text{
+        width: 100%;
+        text-align: center;
+        padding: 30px 10px;
+        z-index: 30;
+    }
+
+    .text h1{
+        font-size: 2.9rem;
+        line-height: 5rem;
+      }
+      .text p{
+          font-size: 22px;
+      }
+      
+      .text span{
+        padding-top: 3%;
+        font-size: 22px;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+      }
+    
+      .icons .fab{
+        font-size: 27px;
+        padding: 0 10px;
+    }
+
+    .icons .fab{
+        font-size: 19.4px;
+        padding: 0 4px;
+    }
+
+    .icons{
+        justify-content: flex-start;
+        margin: 10px;
+    }
+}
+ 
+
