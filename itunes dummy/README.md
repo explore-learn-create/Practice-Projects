@@ -4,7 +4,7 @@
 
 Thanks for checking out this samll Full Responsive Project. Which is iTunes Clone
 
-Here You can check it live.[  ]
+Here You can check it live.[ https://mystifying-mcclintock-82a051.netlify.app/itunes%20dummy/  ]
 
 ## About Project!
 
