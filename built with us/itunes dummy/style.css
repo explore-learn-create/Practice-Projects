@@ -1,0 +1,1558 @@
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+
+}
+
+:root {
+  --light-black: #333333;
+  --color: #1d1d1f;
+  --links-color: #06c;
+}
+
+nav {
+  background: var(--light-black);
+  margin: 0;
+  width: 100%;
+  min-width: 1024px;
+  height: 48px;
+  max-height: 44px;
+  padding-left: calc(max(22px, env(safe-area-inset-left)));
+  padding-right: calc(max(22px, env(safe-area-inset-right)));
+}
+
+.bar {
+  position: relative;
+  margin: 0 auto;
+  width: 980px;
+}
+
+.bar ul {
+  margin: 0;
+  width: 100%;
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hori-bars {
+  display: none;
+  cursor: pointer;
+}
+
+.hori-bars li {
+  line-height: 0px;
+}
+
+.hori-bars li img {
+  filter: invert(100%);
+  height: 9px;
+  width: 19px;
+}
+
+.bar ul li {
+  margin-top: -12px;
+  list-style-type: none;
+  padding-top: 6px;
+}
+
+.bar ul li a {
+  text-decoration: none;
+  color: #f1eaea;
+  opacity: 0.8;
+  font-weight: 100;
+  font-size: 14px;
+  font-weight: none;
+  letter-spacing: 1px;
+  transition: 1s smooth ease;
+}
+
+.bar ul li a:hover {
+  color: white;
+}
+
+.apple img {
+  margin-top: 44%;
+  height: 44px;
+  opacity: 0.9;
+  transition: 1s smooth ease;
+}
+
+.apple img:hover {
+  opacity: 1;
+}
+
+.fas {
+  font-size: 18px;
+  height: 18px;
+  color: rgb(202, 202, 202);
+}
+
+.fas:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.basket img {
+  margin-top: 44%;
+  height: 44px;
+  opacity: 0.9;
+  transition: 1s smooth ease;
+}
+
+.basket img:hover {
+  opacity: 1;
+}
+
+.bar ul li a:hover {
+  color: #ffffff;
+}
+
+.top-text {
+  display: block;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.itunes-logo {
+  margin-bottom: 6px;
+  position: relative;
+  left: 50%;
+  margin-left: -56.5px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/itunes/home/k/images/overview/itunes_logo__dwjkvx332d0m_large.png);
+  width: 113px;
+  height: 113px;
+}
+
+.text {
+  text-align: center;
+  color: var(--color);
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+.text h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+
+.text h1 {
+  font-size: 64px;
+  line-height: 1.0625;
+  font-weight: 52388;
+  letter-spacing: -0.008em;
+  word-spacing: -6px;
+}
+
+.text p {
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 0.85;
+  margin-top: 2.1%;
+  line-height: 1.4em;
+  max-width: 64.66669%;
+  margin-left: auto;
+  margin-right: auto;
+  word-spacing: -2px;
+}
+
+.bas-app {
+  display: none;
+}
+
+.for-window {
+  display: grid;
+  text-align: center;
+  place-content: center;
+  margin: 48px 0 68px 0;
+}
+
+.for-window p {
+  font-weight: 500;
+  opacity: 0.9;
+  letter-spacing: 0.1px;
+}
+
+.microsoft {
+  height: 75px;
+  width: 204px;
+  background-image: url(https://www.apple.com/v/itunes/home/k/images/overview/microsoft_icon__dkyx21pkzd6q_large.png);
+  background-repeat: no-repeat;
+  margin-top: 22px;
+}
+
+.reqment {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 500;
+  opacity: 0.9;
+  color: var(--links-color);
+  padding-top: 22px;
+  font-size: 18px;
+}
+
+.reqment p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.reqment svg {
+  opacity: 1;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.reqment::before,
+.reqment::after {
+  content: "";
+  background: black;
+  height: 1px;
+  width: 300px;
+  opacity: 0.3;
+  position: relative;
+  bottom: -10px;
+}
+
+.reqment::before {
+  margin-right: 15px;
+}
+.reqment::after {
+  margin-left: 15px;
+}
+.computer-img img {
+  width: 901px;
+  height: 528px;
+  background-size: 901px 528px;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 50%;
+  bottom: 30px;
+  margin-left: -450.5px;
+}
+
+.toggle-pera {
+  max-width: 66.66667%;
+  text-align: center;
+  text-align: start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 61px;
+  position: relative;
+  top: 30px;
+  padding-bottom: 64px;
+  padding-left: 63px;
+  padding-right: 1px;
+  opacity: 0.9;
+  display: none;
+}
+.hardware {
+  position: relative;
+  bottom: 17px;
+}
+
+.hardware h4 {
+  position: relative;
+  bottom: 20px;
+}
+
+.software {
+  position: relative;
+  top: 20px;
+}
+.software h4 {
+  position: relative;
+  bottom: 17px;
+}
+
+.toggle-pera li {
+  position: relative;
+  right: -27px;
+}
+
+.toggle-pera ul li {
+  line-height: 1.5em;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+
+.looking-for {
+  display: flex;
+  gap: 23px;
+  width: 898.33px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  padding-top: 59px;
+  padding-bottom: 50px;
+  line-height: 1.28577;
+  font-weight: 550;
+  letter-spacing: -0.016em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+
+.looking-for p {
+  opacity: 0.7;
+}
+
+.looking-for a {
+  color: #06c;
+  font-weight: 500;
+  opacity: 0.9;
+  text-decoration: none;
+  z-index: 3;
+}
+
+.looking-for a:hover {
+  text-decoration: underline;
+}
+
+.mac::after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  top: -18px;
+  right: -49px;
+  opacity: 0.8;
+  color: var(--links-color);
+  width: fit-content;
+}
+.window::after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  top: -18px;
+  right: -58px;
+  opacity: 0.8;
+  color: var(--links-color);
+  width: fit-content;
+}
+
+.mac a::after:hover {
+  text-decoration: none;
+}
+
+.support-version {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 134px;
+  padding-bottom: 130px;
+  color: #1d1d1f;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.support-version > .support,
+.version {
+  width: 490px;
+}
+
+.support-version h2 {
+  font-size: 40px;
+  width: 490px;
+  line-height: 1.1;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.support-version p {
+  font-size: 17px;
+  width: 462px;
+  margin-top: 20px;
+  line-height: 1.666rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+.support-version a {
+  text-decoration: none;
+  color: var(--links-color);
+  font-weight: 550;
+  opacity: 0.8;
+  line-height: 2em;
+}
+
+.support-version a:hover {
+  text-decoration: underline;
+}
+
+.support::after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 15px;
+  margin: 1px 0 0 2px;
+  color: var(--links-color);
+  opacity: 0.8;
+}
+
+.version::after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 15px;
+  margin: 1px 0 0 2px;
+  color: var(--links-color);
+  opacity: 0.8;
+}
+
+.support,
+.version {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.version p {
+  text-align: center;
+  padding: 0px 42px;
+}
+
+footer {
+  background: #f5f5f7;
+  height: fit-content;
+  width: 100%;
+}
+
+.footer-box{
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 0 22px;
+}
+
+
+.footer-box hr{
+  color: grey;
+  opacity: .5;
+}
+.top-footer ol{
+  list-style-position: outside;
+  margin: 0;
+  padding: 0 17px;
+}
+.top-footer{
+  padding: 17px 0 11px;
+}
+
+.footer-box li{
+  list-style-type: decimal;
+  font-size: 12px;
+  font-weight: 450;
+  color: grey;
+  opacity: .9;
+  line-height: 25px;
+  letter-spacing: .2px;
+  text-align: start;
+}
+
+.top-footer li::marker{
+  color: grey;
+}
+
+.after-top-footer{
+  padding: 17px 0 17px 0;
+}
+
+.after-top-footer img{
+  height: 36px;
+  width: 20px;
+  z-index: 2;
+  filter: invert(66%);
+}
+
+.after-top-footer li{
+    list-style: none;
+    float: left;
+}
+
+.after-top-footer li a{
+  color: var(--light-black);
+  font-weight: 500;
+}
+
+.after-top-footer .both-down::before{
+  width: 8px;
+  height: 36px;
+  background-size: 8px 36px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/ac/globalfooter/6/en_IN/assets/ac-footer/breadcrumbs/separator/icon_large.svg);
+  margin-right: 11px;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -1px;
+  height: 18px;
+  background-position-y: 100%;
+  filter: opacity(100%);
+  filter: invert(23%);
+}
+
+
+.after-top-footer .both-down{
+  position: relative;
+  top: 5px;
+}
+.after-top-footer .both-down{
+  padding: 0 10px;
+  filter: opacity(90%);
+}
+
+.after-top-footer img:hover{
+  filter: invert(90%); 
+}
+
+.after-top-footer a{
+  text-decoration: none;
+}
+
+.after-top-footer a:hover{
+  text-decoration: underline;
+}
+
+.options-links{
+ padding: 5px 0;
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+
+}
+
+.options-links hr{
+  display: none;
+}
+
+.options-links span{
+  font-size: 12px;
+  color: var(--color);
+  font-weight: 550;
+  opacity: .9;
+  margin-bottom: .1em;
+  z-index: 3;
+  cursor: default;
+  width: fit-content;
+}
+
+#myDropdown{
+  margin-bottom: .8em;
+ display: flex;
+ flex-direction: column;
+}
+
+#myDropdown a{
+  font-size: 12px;
+  color: var(--light-black);
+  opacity: .844;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: start;
+  padding-top: 13px;
+  width: fit-content;
+}
+
+#myDropdown a:hover{
+  text-decoration: underline;
+}
+
+.hr{
+  display: none;
+}
+
+.shop, .services, .account, .app-sto, .for-bui, .for-edu, .for-heal, .app-val, .abo-app{
+  display: flex;
+  flex-direction: column;
+}
+
+.account, .for-bui, .for-edu, .for-heal, .abo-app{
+  margin-top: .8em;
+}
+
+.call{
+  padding-top: 1.4rem;
+  font-size: 12px;
+  color: grey;
+  opacity: .9;
+  font-weight: 500;
+  word-spacing: 1px;
+}
+.call a{
+  color: var(--links-color);
+  text-decoration: none;
+  opacity: .9;
+}
+
+.call a:hover{
+  text-decoration: underline;
+}
+.hr-hr hr{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.copyright{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: grey; 
+  opacity: .9;
+  word-wrap: nowrap;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+}
+
+.copyright-links a{
+  color: var(--light-black);
+  text-decoration: none;
+  opacity: .9;
+  font-size: 11.6px;
+  font-weight: 5200;
+  margin-left: 20px;
+  border-right: 1px solid rgba(153, 153, 153, 0.719);
+  padding: 0 10px 0 0;
+}
+
+.no-boder a{
+  border-right: hidden;
+}
+.copyright a:hover{
+  text-decoration: underline;
+}
+
+.copyright-links{
+  position: relative;
+  right: 70px;
+}
+.far-away a{
+  color: var(--light-black);
+  text-decoration: none;
+  opacity: .9;
+  font-size: 11.5px;
+  font-weight: 5200;
+}
+
+  
+@media screen and (min-width: 800px) and (max-width: 1068px) {
+  .bar ul {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* --------------------------nav bar--------------- */
+  nav {
+    position: relative;
+    min-width: 100vw !important;
+    width: 100vw;
+    max-height: 50px;
+  }
+  .bar ul {
+    display: none;
+  }
+
+  .hori-bars {
+    display: block;
+    list-style: none;
+    cursor: pointer;
+    list-style: none;
+    position: absolute;
+    top: 13px;
+    width: max-content;
+  }
+
+  .bas-app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .basket-mob {
+    position: absolute;
+    right: 20px;
+    top: 0;
+  }
+  .basket-mob img {
+    height: 47px;
+    opacity: 0.7;
+  }
+  .basket-mob img:hover {
+    opacity: 1;
+  }
+  .apple-mob img {
+    height: 51px;
+    opacity: 0.7;
+  }
+  .apple-mob img:hover {
+    opacity: 1;
+  }
+  /* --------------------------logo and text--------------- */
+  .top-text {
+    padding-bottom: 65px;
+    text-align: center;
+    justify-content: unset;
+  }
+
+  .itunes-logo {
+    width: 67px;
+    height: 67px;
+    background-size: 67px 67px;
+    left: 55%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/itunes/home/k/images/overview/itunes_logo__dwjkvx332d0m_small.png);
+  }
+
+  .text {
+    text-align: center;
+    color: var(--color);
+    width: 100%;
+    margin: auto;
+  }
+  .text h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: -1%;
+    margin-bottom: 3.4%;
+  }
+
+  .text h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 550;
+    /* letter-spacing: unset; */
+    word-spacing: 0px;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .text p {
+    font-size: 19px;
+    line-height: 1.4211;
+    font-weight: 400;
+    letter-spacing: 0.012em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+    max-width: 80%;
+  }
+
+  .microsoft {
+    width: 144px;
+    height: 53px;
+    background-size: 144px 53px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/itunes/home/k/images/overview/microsoft_icon__dkyx21pkzd6q_medium.png);
+  }
+
+  .computer-img img {
+    width: 286px;
+    height: 168px;
+    background-size: 286px 168px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: unset;
+    bottom: 30px;
+    margin-left: unset;
+  }
+
+  .reqment {
+    padding-top: 6px;
+  }
+  .reqment svg {
+    opacity: 1;
+    margin-left: 8px;
+    cursor: pointer;
+    margin-top: 2px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .reqment p {
+    font-size: 15px;
+  }
+
+  .reqment::before,
+  .reqment::after {
+    display: none;
+  }
+  .toggle-pera {
+    max-width: 283px;
+    text-align: center;
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 61px;
+    position: relative;
+    top: 30px;
+    padding-left: 28px;
+    padding-right: 1px;
+    opacity: 0.9;
+    display: none;
+  }
+
+  .toggle-pera li {
+    position: relative;
+    right: 19px;
+  }
+
+  .hardware h4 {
+    position: relative;
+    bottom: 15px;
+    left: -43px;
+  }
+
+  .software h4 {
+    left: -43px;
+  }
+
+  .toggle-pera ul li {
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+  }
+  .looking-for {
+    width: 186.33px;
+  }
+
+  .looking-for {
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    padding-top: 59px;
+    padding-bottom: 50px;
+    line-height: 1.28577;
+    font-weight: 550;
+    letter-spacing: -0.016em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+  .mac {
+    margin: 0 0 0 24px;
+  }
+
+  .support-version {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 170px;
+    width: 87.5%;
+    padding-top: 72px;
+    padding-bottom: 94px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .support-version h2 {
+    font-size: 26px;
+    width: unset;
+  }
+
+  .support-version p {
+    font-size: 17px;
+    width: unset;
+    padding: 0;
+  }
+
+  .support-version a {
+    font-size: 15px;
+  }
+
+  .support-version > .support,
+  .version {
+    width: 100%;
+  }
+
+  .support,
+  .version {
+    padding: 0;
+  }
+ 
+  .footer-box{
+    padding: 0 16px;
+  }
+
+  .footer-box li{
+    text-align: start;
+    line-height: 17px;
+    letter-spacing: .2px;
+    padding-bottom: .7rem;
+}
+
+.after-top-footer img{
+  position: relative;
+  top: -4px;
+}
+.options-links{
+  display: flex; 
+  flex-wrap: wrap;
+ }
+
+ .options-links span{
+   font-weight: 500;
+   opacity: .8;
+   z-index: 3;
+   text-align: start;
+   margin-bottom: unset;
+   cursor: pointer;
+ }
+
+.options-links #myDropdown{
+ display: none;
+}
+
+
+.account, .for-bui, .for-edu, .for-heal, .abo-app{
+  margin-top: 0;
+}
+
+.options-links hr{
+  display: block;
+ width: 91vw;
+ margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hr{
+  margin-top: -14px;
+}
+
+.call {
+  padding-top: inherit;
+}
+
+.call p{
+  text-align: start;
+}
+.hr-hr{
+  display: none;
+}
+
+.copyright{
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+    align-self: flex-start;
+    text-align: start;
+}
+
+.copyright p{
+  text-align: start;
+  margin-top: -3px;
+  margin-bottom: 21px;
+  order: 1;
+}
+.far-away{
+  width: fit-content;
+  order: 3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.copyright-links{
+  position: absolute;
+    right: unset;
+    left: unset;
+    /* margin-bottom: -14px; */
+}
+.copyright-links a{
+  text-align: start;
+  margin-left: 0;
+  padding: 0px 7px 0 0;
+}
+
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 376px) {
+  .text h1 {
+    font-size: 37px;
+    line-height: 1.1;
+    font-weight: 550;
+    letter-spacing: unset;
+    word-spacing: 0px;
+    max-width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 345px){
+
+  .copyright-links{
+    position: absolute;
+      right: unset;
+      left: unset;
+      margin-bottom: -14px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* --------------------------nav bar--------------- */
+  nav {
+    position: relative;
+    min-width: 100vw !important;
+    width: 100vw;
+    max-height: 50px;
+    /* padding-left: calc(max(10px, env(safe-area-inset-left))); */
+  }
+
+  .bar ul {
+    display: none;
+  }
+
+  .hori-bars {
+    display: block;
+    list-style: none;
+    cursor: pointer;
+    list-style: none;
+    position: absolute;
+    top: 13px;
+    width: max-content;
+  }
+
+  .bas-app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .basket-mob {
+    position: absolute;
+    right: 30px;
+    top: 0;
+  }
+  .basket-mob img {
+    height: 47px;
+    opacity: 0.7;
+  }
+  .basket-mob img:hover {
+    opacity: 1;
+  }
+  .apple-mob img {
+    height: 51px;
+    opacity: 0.7;
+  }
+  .apple-mob img:hover {
+    opacity: 1;
+  }
+
+  /* --------------------------logo and text--------------- */
+  .top-text {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  .itunes-logo {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    left: 53%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/itunes/home/k/images/overview/itunes_logo__dwjkvx332d0m_small.png);
+    max-width: 80%;
+  }
+
+  .text {
+    text-align: center;
+    color: var(--color);
+    width: 100%;
+  }
+  .text h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: unset;
+    margin-bottom: 3.4%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .text h1 {
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 550;
+    /* letter-spacing: unset; */
+    word-spacing: 1px;
+    margin-left: 0;
+    margin-right: 0;
+    line-break: auto;
+    padding: 0px 22px;
+  }
+
+  .text p {
+    line-height: 1.6;
+    font-weight: 500;
+    letter-spacing: 0.012em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+    max-width: 80%;
+  }
+
+  .microsoft {
+    width: 144px;
+    height: 53px;
+    background-size: 144px 53px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/itunes/home/k/images/overview/microsoft_icon__dkyx21pkzd6q_medium.png);
+  }
+
+  .computer-img img {
+    width: 286px;
+    height: 168px;
+    background-size: 286px 168px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: unset;
+    bottom: 30px;
+    margin-left: unset;
+  }
+
+  .reqment {
+    padding-top: 6px;
+  }
+  .reqment svg {
+    opacity: 1;
+    margin-left: 8px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+  }
+
+  .reqment p {
+    font-size: 17px;
+  }
+
+  .reqment::before,
+  .reqment::after {
+    display: none;
+  }
+
+  .toggle-pera {
+    max-width: 419px;
+    text-align: center;
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 61px;
+    position: relative;
+    top: 30px;
+    padding-left: 28px;
+    padding-right: 1px;
+    opacity: 0.9;
+    display: none;
+  }
+
+  .toggle-pera li {
+    position: relative;
+    right: 19px;
+  }
+
+  .hardware h4 {
+    position: relative;
+    bottom: 17px;
+    left: -43px;
+  }
+
+  .toggle-pera ul li {
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+  }
+
+  .software h4 {
+    left: -43px;
+  }
+
+  .looking-for {
+    width: 186.33px;
+  }
+
+  .looking-for {
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    padding-top: 59px;
+    padding-bottom: 50px;
+    line-height: 1.28577;
+    font-weight: 550;
+    letter-spacing: -0.016em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+  .mac {
+    margin: 0 0 0 24px;
+  }
+
+  .support-version {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 170px;
+    width: 87.5%;
+    padding-top: 72px;
+    padding-bottom: 94px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .support-version h2 {
+    font-size: 26px;
+    width: unset;
+  }
+
+  .support-version p {
+    font-size: 17px;
+    width: unset;
+  }
+
+  .support-version a {
+    font-size: 17px;
+  }
+
+  .support-version > .support,
+  .version {
+    width: 100%;
+  }
+
+  .support,
+  .version {
+    padding: 0;
+  }
+
+  .footer-box{
+    padding: 0 16px;
+  }
+
+  .footer-box li{
+    text-align: start;
+    line-height: 17px;
+    letter-spacing: .2px;
+    padding-bottom: .5rem;
+}
+
+.after-top-footer img{
+  position: relative;
+  top: -4px;
+}
+
+.options-links{
+  padding-top: 0;
+  display: flex; 
+  flex-wrap: wrap;
+ }
+
+ .options-links span{
+   font-weight: 500;
+   opacity: .8;
+   z-index: 3;
+   text-align: start;
+   margin-bottom: 0;
+   cursor: pointer;
+ }
+
+.options-links #myDropdown{
+ display: none;
+}
+
+
+.account, .for-bui, .for-edu, .for-heal, .abo-app{
+  margin-top: 0;
+}
+
+.options-links hr{
+  display: block;
+ width: 93vw;
+ margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hr{
+  margin-top: -14px;
+}
+
+.call {
+  padding-top: inherit;
+}
+
+.call p{
+  text-align: start;
+}
+.hr-hr{
+  display: none;
+}
+
+.copyright{
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+}
+
+.copyright p{
+  text-align: start;
+  margin-top: -3px;
+  margin-bottom: 21px;
+  order: 1;
+}
+.far-away{
+  width: fit-content;
+  order: 3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.copyright-links{
+  order: 0;
+  position: absolute;
+  left: 0;
+  right: unset;
+}
+.copyright-links a{
+  text-align: start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 16px;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1070px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 100%;
+    min-width: 100vw !important;
+    height: 48px;
+    max-height: 44px;
+    padding-left: unset;
+    padding-right: calc(max(22px, env(safe-area-inset-right)));
+  }
+
+  .bar {
+    position: relative;
+    margin: 0 auto;
+    width: 100vw;
+  }
+
+  .bar ul {
+    margin: 0;
+    width: 100vw;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .bar ul li a {
+    opacity: 0.8;
+    font-weight: 0;
+    font-size: 14px;
+    font-weight: none;
+    letter-spacing: 1px;
+  }
+
+  .fas {
+    font-size: 17px;
+    height: 15px;
+    color: rgb(190, 190, 190);
+  }
+
+  .text {
+    text-align: center;
+    color: var(--color);
+    width: 692px;
+  }
+
+  .top-text {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+  }
+
+  .itunes-logo {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    left: 52%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/itunes/home/k/images/overview/itunes_logo__dwjkvx332d0m_medium_2x.png);
+    max-width: 80%;
+  }
+  .text h3 {
+    font-size: 26px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+    margin-bottom: 1.4%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .text h1 {
+    font-size: 43px;
+    line-height: 1.3;
+    font-weight: 550;
+    /* letter-spacing: unset; */
+    word-spacing: 1px;
+    margin-left: 0;
+    margin-right: 0;
+    line-break: auto;
+  }
+
+  .text p {
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: 0.011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+    /* max-width: 80%; */
+    max-width: none;
+  }
+  .microsoft {
+    width: 144px;
+    height: 53px;
+    background-size: 144px 53px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/itunes/home/k/images/overview/microsoft_icon__dkyx21pkzd6q_medium.png);
+  }
+
+  .computer-img img {
+    width: 647px;
+    height: 380px;
+    background-size: 647px 380px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -323.5px;
+  }
+
+  .reqment svg {
+    opacity: 1;
+    margin-left: 8px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+  }
+
+  .reqment p {
+    font-size: 17px;
+  }
+
+  .reqment::before,
+  .reqment::after {
+    content: "";
+    background: black;
+    height: 1px;
+    width: 190px;
+    opacity: 0.3;
+    position: relative;
+    bottom: -10px;
+  }
+
+  .reqment::before {
+    margin-right: 10px;
+  }
+  .reqment::after {
+    margin-left: 10px;
+  }
+
+  .looking-for {
+    width: 641.33px;
+  }
+
+  .support-version {
+    display: grid;
+    gap: 43px;
+    padding-top: 72px;
+    padding-bottom: 94px;
+  }
+
+  .support-version h2 {
+    font-size: 32px;
+    margin: 0 173px;
+    width: 346px;
+  }
+
+  .support-version p {
+    font-size: 17px;
+  }
+
+  .support-version a {
+    font-size: 17px;
+  }
+
+  .support-version > .support,
+  .version {
+    width: unset;
+  }
+
+  .support,
+  .version {
+    padding: 0;
+  }
+
+  .support h2 {
+    width: 372px;
+  }
+
+  .copyright-links{
+    position: relative;
+    right: 10px;
+  }
+
+}
