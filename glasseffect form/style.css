@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Signika', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to right top,
+    #12def2,
+    #00d2f9,
+    #00c5fe,
+    #00b7ff,
+    #00a8ff
+  );
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-profile {
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70%;
+  width: 13%;
+  background: rgba(255, 255, 255, 0.233);
+  box-shadow: 0 8px 32px 0 rgba(22, 219, 203, 0.678);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+
+.logo {
+    margin: 16px 0;
+}
+.logo img{
+    height: 94px;
+    width: 94px;
+    border-radius: 50%;
+    cursor: not-allowed;
+}
+
+
+.social-media{
+  display: grid;
+  text-align: center;
+}
+.social-media p{
+  color: #02273a;
+  font-weight: 500;
+  letter-spacing: .2px;
+}
+.linkss{
+  display: grid;
+  place-content: center;
+  width: 100%;
+  margin: 20px 0;
+  row-gap: 30px;
+  text-align: center;
+}
+
+.button{
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.692);
+  text-align: center;
+  position: relative;
+}
+.button span{
+  line-height: 25px;
+}
+
+.button .icon{
+ display: block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.button .icon i{
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.icon .face{
+  color: #0129afd7;
+}
+
+.icon .git{
+  color: #000411d2;
+}
+
+.icon .blog{
+  color: #e95d00d7;
+}
+
+.icon .face:hover{
+  color: #002088;
+}
+
+.icon .git:hover{
+  color: #000103ed;
+}
+
+.icon .blog:hover{
+  color: #e25b01;
+}
+.backTo-main{
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+}
+.backTo-main a{
+    text-decoration: none;
+    color: rgba(10, 78, 134, 0.904);
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 17.5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.backTo-main a::before{
+    content: "\f060";
+    font-family: "Font Awesome 5 Free"; font-weight: 600;
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    color: white;
+}
+
+.backTo-main a:hover{
+   text-decoration: underline;
+   color: rgba(2, 58, 104, 0.972);
+}
+
+
+.glasseffect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.281);
+  box-shadow: 0 8px 32px 0 rgba(22, 219, 203, 0.678);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 0 10px 10px 0;
+}
+
+.formback {
+  background: rgba(255, 255, 255, 0.904);
+  height: 85%;
+  width: 85%;
+  border-radius: 7px;
+}
+
+.form-inputs{
+  padding: 0 20px;
+}
+.form-inputs h1{
+  margin-top: 10px;
+}
+.form-inputs input{
+  width: 100%;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: 'Signika', sans-serif;
+  padding: 4px 0;
+  margin-top: 30px;
+  outline-color: rgb(0, 212, 219);
+  outline-width: thin;
+  padding-inline-start: 10px;
+}
+
+
+.form-inputs button{
+  text-align: center;
+  margin-top: 20px;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 375px){
+  
+  body{
+    background-image: linear-gradient(to right top, #f42df4, #d126dd, #af1ec5, #8f16ac, #710d94);
+  }
+  
+  .wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .glass-profile{
+    height: 16%;
+    width: 78%;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-basis: content;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 8px 32px 0 rgba(179, 43, 233, 0.83);
+  }
+  
+  .social-media{
+    display: flex;
+    width: 100%;
+    padding: 0 7px 0 0;
+    text-align: start;
+    position: relative;
+  }
+  .social-media p{
+     margin: auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    line-height: 10px;
+  }
+  
+  .linkss{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .logo {
+    margin: 16px 10px;
+  }
+  .logo img{
+    height: 40px;
+    width: 40px;;
+    border-radius: 50%;
+    cursor: not-allowed;
+  }
+  .backTo-main{
+   display: none;
+  }
+  
+  .button{
+    height: 30px;
+    width: 30px;
+  }
+  .button span{
+    font-size: 13px;
+    line-height: 15px;
+  }
+  
+  .button .icon{
+    display: block;
+     height: 30px;
+     width: 30px;
+  }
+  .button .icon i{
+    font-size: 22px;
+    line-height: 30px;
+  }
+  
+  .glasseffect{
+    height: 65%;
+    width: 78%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 8px 32px 0 rgba(179, 43, 233, 0.734);
+  } 
+  .formback {
+    height: 89%;
+    width: 89%;
+  }
+  .form-inputs{
+    padding: 0 14px;
+  }
+  .form-inputs h1{
+    font-size: 15.5px;
+    margin-top: 20px;
+  }
+
+  .form-inputs input{
+    font-size: 11px;
+    margin-top: 27px;
+    padding: 6px 0;
+    padding-inline-start: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.59);
+    border-radius: 4px;
+    outline-color: rgb(193, 0, 219);
+  }
+
+  .form-inputs button{
+    margin-top: 25px;
+    padding: 2px 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 480px){
+
+   body{
+    background-image: linear-gradient(to right top, #eb5ea1, #ef4682, #ed2c5f, #e51439, #d60a0a);
+   }
+
+  .wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .glass-profile{
+    height: 15%;
+    width: 70%;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-basis: content;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(228, 54, 115, 0.734);
+  }
+  
+  .social-media{
+    display: flex;
+    width: 100%;
+    padding: 0 12px 0 0;
+    text-align: start;
+  }
+  .social-media p{
+    height: 100%;
+      margin: auto;
+    display: inline-block;
+    width: 70%;
+    font-size: 14.5px;
+  }
+  
+  .linkss{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+    margin-top: -0.1px;
+  }
+  
+  .logo {
+    margin: 16px 10px;
+  }
+  .logo img{
+    height: 39px;
+    width: 39px;
+    border-radius: 50%;
+    cursor: not-allowed;
+  }
+  .backTo-main{
+   display: none;
+  }
+
+  .glasseffect{
+    height: 70%;
+    width: 70%;
+    box-shadow: 0 8px 32px 0 rgba(228, 54, 115, 0.734);
+  }
+  
+  .button{
+    height: 30px;
+    width: 30px;
+  }
+  .button span{
+    font-size: 13px;
+    line-height: 15px;
+  }
+  
+  .button .icon{
+    display: block;
+     height: 30px;
+     width: 30px;
+  }
+  .button .icon i{
+    font-size: 22px;
+    line-height: 30px;
+  }
+  
+  .formback {
+    height: 89%;
+    width: 89%;
+  }
+  .form-inputs{
+    padding: 0 14px;
+  }
+  .form-inputs h1{
+    font-size: 15.5px;
+    margin-top: 20px;
+  }
+
+  .form-inputs input{
+    font-size: 11px;
+    margin-top: 27px;
+    padding: 6px 0;
+    padding-inline-start: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.59);
+    border-radius: 4px;
+    outline-color: #eb5ea1;  
+  }
+
+  .form-inputs button{
+    margin-top: 23px;
+    padding: 2px 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+  body{
+    background-image: linear-gradient(to right top, #eb5ea1, #ef4682, #ed2c5f, #e51439, #d60a0a);
+   }
+
+  .wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-profile{
+  height: 15%;
+  width: 70%;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-basis: content;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 8px 32px 0 rgba(228, 54, 115, 0.734);
+}
+
+.social-media{
+  display: flex;
+  width: 100%;
+  padding: 0 12px 0 0;
+  text-align: start;
+}
+.social-media p{
+  height: 100%;
+    margin: auto;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.linkss{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -0.1px;
+}
+
+.logo {
+  margin: 16px 10px;
+}
+.logo img{
+  height: 57px;
+  width: 57px;
+  border-radius: 50%;
+  cursor: not-allowed;
+}
+.backTo-main{
+ display: none;
+}
+
+.button{
+  height: 40px;
+  width: 40px;
+}
+.button span{
+  font-size: 15px;
+  line-height: 0;
+}
+
+.button .icon{
+  display: block;
+   height: 40px;
+   width: 40px;
+}
+.button .icon i{
+  font-size: 27px;
+  line-height: 40px;
+}
+
+.glasseffect{
+  height: 70%;
+  width: 70%;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 8px 32px 0 rgba(228, 54, 115, 0.734);
+}
+
+.form-inputs h1{
+  font-size: 23.5px;
+}
+.form-inputs input{
+  margin-top: 26px;
+  outline-color: #eb5ea1;  
+
+}
+}
+@media screen and (min-width: 769px) and (max-width: 800px){
+
+.form-inputs h1{
+  font-size: 30px;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1204px){
+ 
+  .logo {
+    margin: 20px 0;
+} 
+  .logo img{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    cursor: not-allowed;
+}
+
+
+.button{
+  height: 35px;
+  width: 35px;
+}
+
+.button .icon{
+   height: 35px;
+   width: 35px;
+}
+
+.button .icon i{
+  font-size: 23px;
+  line-height: 35px;
+}
+
+
+}
