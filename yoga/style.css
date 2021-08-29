@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --main-color: #ff0053;
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #ff9668,
+    #ff7f65,
+    #fe6768,
+    #f94c6f,
+    #f02c79
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* --------------wrapper---------------- */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* --------------background---------------- */
+.background {
+  min-height: 87%;
+  width: 90%;
+  background: oldlace;
+  border-radius: 7px; 
+}
+/* --------------navbar---------------- */
+.nav-bar{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar > nav > p{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f02c79;
+    text-transform: capitalize;
+}
+
+.nav-bar p::after{
+    content: '';
+    display: block;
+    background-image: linear-gradient(
+    to right bottom,
+    #ff9668,
+    #ff7f65,
+    #fe6768,
+    #f94c6f,
+    #f02c79
+  );
+  width: 0;
+  height: 3px;
+  z-index: 10;
+ border-radius: 10px;
+ transition: .3s ease-in-out;
+}
+.nav-bar p:hover::after{
+    width: 100%;
+}
+
+/* --------------yoga main---------------- */
+.yoga-main{
+    display: flex;
+    align-items: center;
+}
+
+/* --------------yoga image---------------- */
+.yoga-main-image img {
+  width: 370px;
+  height: 220px;
+  border-radius: 7px;
+  margin: 20px 30px;
+}
+
+/* --------------subscribe or text----------------*/
+.subscribe{
+    width: 35%;
+    padding-right: auto;
+    padding-left: auto;
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.subscribe h3{
+    letter-spacing: 1px;
+}
+
+.subscribe p{
+    padding: 6px 0;   
+}
+
+.subscribe .hero-btn{
+    padding-top: 10px;
+}
+
+.subscribe .hero-btn a{
+    text-decoration: none;
+    background-image: linear-gradient(
+    to right bottom,
+    #ff9668,
+    #ff7f65,
+    #fe6768,
+    #f94c6f,
+    #f02c79
+  );
+color: #fff;
+padding: 8px 14px;
+border-radius: 25px;
+letter-spacing: .7px;
+}
+
+.old-skool{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-wrapper{
+    display: flex;
+    padding-left: 20px;
+}
+
+.cards{
+    margin: 50px 15px;
+}
+.card-back{
+    height: 144px;
+    width: 154px;
+    background: rgb(255, 251, 242);
+    border-radius: 7px;
+    box-shadow: 0px 0px 6px 3px rgba(0 0 0 / 10%);
+    position: relative;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.card-back:hover{
+    transform: scale(110%);
+    box-shadow: 0px 0px 6px 3px rgba(0 0 0 / 20%);
+}
+
+.card-back img{
+    width: 158px;
+    height: 106px;
+    max-width: fit-content;
+    position: absolute;
+    top: 13px;
+    margin-top: -14px;
+}
+
+.meditating{
+    display: flex;
+    justify-content: center;
+}
+.meditating img{
+    margin-top: 0px;
+    height: 96px;
+}
+
+.food{
+    display: flex;
+    justify-content: center;
+}
+
+.card-back span{
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(50%);
+    letter-spacing: .2px;
+    color: var(--main-color);
+    font-size: 17px;
+}
+
+.exrecise span{
+    transform: translateX(63%); 
+}
+
+.food span{
+    transform: translateX(5%); 
+}
+
+.progress-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.progress {
+    margin: 10px 90px;
+    padding:0;
+    width: 33%;
+    height:16px;
+    overflow:hidden;
+    background:#b3b3b3;
+    border-radius:6px;
+    box-shadow: 0px 0px 6px 3px rgba(0 0 0 / 10%);
+  }
+  
+  .bar {
+      position:relative;
+    float:left;
+    min-width:1%;
+    height:100%;
+    background-image: linear-gradient(
+        to right bottom,
+        #ff9668,
+        #ff7f65,
+        #fe6768,
+        #f94c6f,
+        #f02c79
+      );
+  }
+  
+  .percent {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    font-family:tahoma,arial,helvetica;
+    font-size: 10px;
+    color:white;
+  }
+
+  .progress-wrapper span{
+      padding-left:  260px;
+      margin: auto;
+      color: #fe6768;
+      font-weight: 600;
+      font-size: 13.6px;
+      letter-spacing: .6px;
+  }
+  
