@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap'); 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Readex Pro', sans-serif;
+}
+ 
+/* ---------- Nav tag ---------------- */
+
+ nav{ 
+    width: 100%;
+    margin: 0;
+}
+
+/* -------------- Logo ----------- */
+.logo img{
+    height: 30px;
+    width: 30px;
+    padding: 12px;
+}
+
+/* ----------- Nav bar links-------------- */
+
+nav ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+}
+
+ul li.topnav-right {
+      float: right;
+}
+
+
+ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 14px;
+    color: rgba(0, 0, 0, 0.794);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+ul li a:hover{
+color: #000;
+}
+
+.btnSignIn{
+    padding: 10px 0;
+}
+.btnSignIn a{
+    background-color: #e5e500;
+    padding: 8px 26px;
+    font-size: 13px;
+    border-radius: 27px;
+}
+
+.slider-box{
+  width: 90%;
+  height: 75vh;
+margin: 30px auto;
+position: relative;
+overflow: hidden;
+}
+
+#slider{
+    width: 100%;
+    display: inline-flex;
+    transition: 0.7s;
+}
+#slider img{
+    width: 100%;
+}
+
+.indicator{
+   position: absolute;
+   left: 50%; 
+   bottom: 20px;
+   transform: translate(-50%);
+}
+
+.indicator span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(253, 8, 8, 0.993);
+    cursor: pointer;
+}
+
+.active{
+    background: rgb(0, 0, 0) !important;
+}
+
+
+.nav-images{
+    width: 90%;
+    margin: 90px auto;
+  }
+
+  .image-info{
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .image-info img{
+  width: 90px;
+  height: 80px;
+  border-radius: 5px;
+  }

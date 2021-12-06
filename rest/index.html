@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Test</title>
+  </head>
+
+  <body>
+    <nav>
+      <!----------- Nav bar links-------------->
+      <ul>
+        <!-------------- Logo ----------->
+
+        <li class="logo">
+          <img src="images/logo-removebg-preview.png" alt="logo" />
+        </li>
+        <!-------------- Logo-End ----------->
+        <li><a href="">Maintance</a></li>
+        <li><a href="">E-commerce</a></li>
+        <li><a href="">Club</a></li>
+        <li><a href="">Rento</a></li>
+        <li><a href="">Food</a></li>
+        <li><a href="">Education</a></li>
+        <li><a href="">Banking</a></li>
+        <li><a href="">Hospital</a></li>
+        <li><a href="">other</a></li>
+
+        <!----------------- Sign-In -------------------->
+        <li class="topnav-right" title="location">
+          <a href=""><i class="fad fa-map-marker-alt"></i></a>
+        </li>
+        <!-- button -->
+        <li class="topnav-right btnSignIn"><a href="">Sign in</a></li>
+        <!-- button -->
+        <li class="topnav-right" title="cart">
+          <a href=""><i class="fad fa-cart-arrow-down"></i></a>
+        </li>
+        <!----------------- Sign-In -------------------->
+      </ul>
+    </nav>
+    <!------------ slider----------------->
+    <div class="slider-box">
+      <div id="slider">
+        <img src="images/bed.jpg" alt="" />
+        <img src="images/building.jpg" alt="" />
+        <img src="images/hotel.jpg" alt="" />
+        <img src="images/jacuzi.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="indicator">
+      <span id="btn1" class="active"></span>
+      <span id="btn2"></span>
+      <span id="btn3"></span>
+      <span id="btn4"></span>
+    </div>
+    <!------------ slider -End----------------->
+
+<!----------------small images--------------- -->
+<div class="nav-images">
+      <div class="image-info">
+        <img src="https://thumbs.dreamstime.com/z/business-accounting-team-meeting-room-office-using-pen-pointing-paperwork-finance-concept-business-accounting-team-meeting-154771088.jpg" alt="" />
+        <img src="https://thumbs.dreamstime.com/z/balanced-diet-food-background-balanced-diet-food-background-organic-food-healthy-nutrition-superfoods-meat-fish-legumes-nuts-121936796.jpg" alt="" />
+        <img src="https://thumbs.dreamstime.com/b/portrait-young-smiling-cheerful-entrepreneur-casual-office-making-phone-call-working-laptop-155845824.jpg" alt="" />
+        <img src="images/jacuzi.jpg" alt="" />
+        <img src="images/bed.jpg" alt="" />
+        <img src="https://thumbs.dreamstime.com/b/blue-turquoise-discus-fish-10990006.jpg" alt="" />
+        <img src="images/hotel.jpg" alt="" />
+        <img src="images/jacuzi.jpg" alt="" />
+        <img src="images/bed.jpg" alt="" />
+        <img src="images/building.jpg" alt="" />
+      </div>
+    </div>
+<!----------------small images-end--------------- -->
+
+
+<!-- js for slider -->
+    <script>
+      var slide = document.getElementById("slider");
+      var btn1 = document.getElementById("btn1");
+      var btn2 = document.getElementById("btn2");
+      var btn3 = document.getElementById("btn3");
+      var btn4 = document.getElementById("btn4");
+
+      btn1.onclick = function () {
+        slide.style.transform = "translateX(0px)";
+        btn1.classList.add("active");
+        btn2.classList.remove("active");
+        btn3.classList.remove("active");
+        btn4.classList.remove("active");
+      };
+      btn2.onclick = function () {
+        slide.style.transform = "translateX(-100%)";
+        btn2.classList.add("active");
+        btn3.classList.remove("active");
+        btn4.classList.remove("active");
+        btn1.classList.remove("active");
+      };
+
+      btn3.onclick = function () {
+        slide.style.transform = "translateX(-200%)";
+        btn3.classList.add("active");
+        btn1.classList.remove("active");
+        btn2.classList.remove("active");
+        btn4.classList.remove("active");
+      };
+
+      btn4.onclick = function () {
+        slide.style.transform = "translateX(-300%)";
+        btn4.classList.add("active");
+        btn1.classList.remove("active");
+        btn2.classList.remove("active");
+        btn3.classList.remove("active");
+      };
+    </script>
+    
+  </body>
+</html>
